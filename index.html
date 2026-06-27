@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MADHAV Studio - Premium Restaurant Websites</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config injected by system -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-fixed": "#c5e7ff",
+                        "primary-fixed-dim": "#ffb95f",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-fixed-dim": "#7fd0ff",
+                        "on-tertiary-fixed-variant": "#004c6a",
+                        "on-secondary-container": "#b7b5b4",
+                        "primary-container": "#f59e0b",
+                        "on-background": "#e5e2e1",
+                        "on-tertiary-container": "#004966",
+                        "secondary": "#c8c6c5",
+                        "on-secondary": "#313030",
+                        "surface-bright": "#3a3939",
+                        "outline": "#a08e7a",
+                        "secondary-container": "#474746",
+                        "inverse-primary": "#855300",
+                        "error-container": "#93000a",
+                        "surface-tint": "#ffb95f",
+                        "surface-container-highest": "#353534",
+                        "primary": "#ffc174",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error": "#ffb4ab",
+                        "on-surface": "#e5e2e1",
+                        "surface-container": "#201f1f",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary": "#00344a",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "primary-fixed": "#ffddb8",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#001e2d",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "tertiary": "#8fd5ff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "background": "#131313",
+                        "on-primary-container": "#613b00",
+                        "on-primary": "#472a00",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-container": "#1abdff",
+                        "surface-dim": "#131313",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary-fixed": "#2a1700",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#131313",
+                        "on-primary-fixed-variant": "#653e00",
+                        "on-surface-variant": "#d8c3ad",
+                        "outline-variant": "#534434"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "container-max": "1200px",
+                        "stack-md": "24px",
+                        "stack-sm": "8px",
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "stack-lg": "64px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": [
+                            "Inter"
+                        ],
+                        "headline-sm": [
+                            "Inter"
+                        ],
+                        "button": [
+                            "Inter"
+                        ],
+                        "display-lg": [
+                            "Inter"
+                        ],
+                        "label-caps": [
+                            "Inter"
+                        ],
+                        "headline-md": [
+                            "Inter"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ],
+                        "body-md": [
+                            "Inter"
+                        ]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": [
+                            "40px",
+                            {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-sm": [
+                            "24px",
+                            {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "button": [
+                            "14px",
+                            {
+                                "lineHeight": "1.0",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "display-lg": [
+                            "64px",
+                            {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.04em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "label-caps": [
+                            "12px",
+                            {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-md": [
+                            "32px",
+                            {
+                                "lineHeight": "1.3",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e2e1;
+            position: relative;
+        }
+
+        /* Atmospheric UI Background */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(circle at 15% 50%, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, rgba(255, 193, 116, 0.03) 0%, transparent 50%);
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        /* Noise Texture */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.04;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(140px);
+            opacity: 0.15;
+            z-index: -2;
+            pointer-events: none;
+            mix-blend-mode: screen;
+        }
+
+        .glow-orb-1 {
+            width: 600px;
+            height: 600px;
+            background: #f59e0b;
+            top: -200px;
+            left: -200px;
+        }
+
+        .glow-orb-2 {
+            width: 700px;
+            height: 700px;
+            background: #ffc174;
+            bottom: -300px;
+            right: -200px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-1 {
+            transition-delay: 0.15s;
+        }
+
+        .stagger-2 {
+            transition-delay: 0.3s;
+        }
+
+        .stagger-3 {
+            transition-delay: 0.45s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: #000;
+            border-radius: 999px;
+            padding: 16px 32px;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.5);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+            opacity: 0;
+            transform: scale(0.5);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 15px 40px -10px rgba(245, 158, 11, 0.7);
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            padding: 16px 32px;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            font-weight: 500;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .glass-card {
+            background: linear-gradient(160deg, rgba(35, 35, 35, 0.6) 0%, rgba(15, 15, 15, 0.8) 100%);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-top-color: rgba(255, 255, 255, 0.12);
+            border-left-color: rgba(255, 255, 255, 0.08);
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(245, 158, 11, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        }
+
+        .bg-text {
+            font-size: 24vw;
+            line-height: 0.8;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.02);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            z-index: -1;
+            pointer-events: none;
+            user-select: none;
+            letter-spacing: -0.05em;
+        }
+
+        .shimmer-card {
+            position: relative;
+        }
+
+        .shimmer-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transform: skewX(-20deg);
+            animation: shimmer 6s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+
+            20% {
+                left: 200%;
+            }
+
+            100% {
+                left: 200%;
+            }
+        }
+
+        .float-animation {
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        .mockup-browser {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            background: rgba(20, 20, 20, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .mockup-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            background: rgba(30, 30, 30, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .mockup-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .mockup-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #444;
+        }
+
+        .mockup-dot:nth-child(1) {
+            background: #ff5f56;
+        }
+
+        .mockup-dot:nth-child(2) {
+            background: #ffbd2e;
+        }
+
+        .mockup-dot:nth-child(3) {
+            background: #27c93f;
+        }
+    </style>
+</head>
+
+<body class="font-body-md overflow-x-hidden selection:bg-primary-container selection:text-black">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <!-- TopNavBar -->
+    <div class="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] max-w-container-max z-50 transition-all duration-300">
+        <nav
+            class="bg-background/40 backdrop-blur-xl border border-white/10 rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] transition-all duration-300 ease-in-out">
+            <div
+                class="flex justify-between items-center px-6 md:px-8 py-3">
+                <div
+                    class="font-headline-sm text-headline-sm font-bold tracking-tighter text-white flex items-center gap-2">
+                    <span
+                        class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-black text-xs font-extrabold">M</span>
+                    MADHAV
+                </div>
+                <div class="hidden md:flex gap-10 items-center">
+                    <a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors duration-300 tracking-widest"
+                        href="#services">Services</a>
+                    <a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors duration-300 tracking-widest"
+                        href="#work">Work</a>
+                    <a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors duration-300 tracking-widest"
+                        href="#why-website">Why Website</a>
+                    <a class="font-label-caps text-label-caps text-white/70 hover:text-white transition-colors duration-300 tracking-widest"
+                        href="#pricing">Pricing</a>
+                </div>
+                <a class="font-button text-button btn-primary py-3 px-6 text-sm" href="#demo">Start Project</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Hero Section -->
+    <section
+        class="min-h-[100svh] flex items-center justify-center pt-32 pb-24 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+        <div class="bg-text float-animation">MADHAV</div>
+        <div class="max-w-container-max mx-auto text-center fade-in relative z-10 w-full">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
+                <div class="lg:w-1/2 text-left">
+                    <h1
+                        class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-[80px] text-white mb-8 leading-[1.05] tracking-tighter">
+                        Your restaurant <br /><span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-fixed">deserves
+                            more</span><br /> than a listing.
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12 leading-relaxed">
+                        Take back control of your brand and revenue. We build bespoke digital presences that drive
+                        direct bookings, eliminate commissions, and build lasting loyalty.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a class="font-button text-button btn-primary flex items-center justify-center gap-2"
+                            href="#demo">
+                            See the Demo <i class="w-4 h-4" data-lucide="arrow-right"></i>
+                        </a>
+                        <a class="font-button text-button btn-secondary" href="#pricing">View Pricing</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative w-full h-[500px] flex items-center justify-center fade-in stagger-2">
+                    <!-- Abstract 3D Glassmorphic element placeholder -->
+                    <div
+                        class="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-primary/20 to-transparent border border-white/10 backdrop-blur-3xl float-animation shadow-2xl">
+                    </div>
+                    <div class="absolute w-[250px] h-[250px] rounded-full bg-gradient-to-bl from-white/5 to-transparent border border-white/20 backdrop-blur-xl float-animation"
+                        style="animation-delay: -4s; transform: translate(50px, -50px);"></div>
+                    <div class="absolute inset-0 flex items-center justify-center z-10">
+                        <div
+                            class="glass-card p-6 rotate-[-5deg] transform hover:rotate-0 transition-transform duration-700 w-64 shadow-2xl">
+                            <div
+                                class="w-full h-32 bg-surface-container-high rounded-lg mb-4 flex items-center justify-center">
+                                <i class="w-10 h-10 text-primary/50" data-lucide="utensils"></i>
+                            </div>
+                            <div class="h-4 w-3/4 bg-white/10 rounded mb-2"></div>
+                            <div class="h-4 w-1/2 bg-white/10 rounded"></div>
+                        </div>
+                        <div
+                            class="glass-card p-6 rotate-[5deg] transform hover:rotate-0 transition-transform duration-700 w-64 shadow-2xl absolute top-1/2 left-1/2 translate-x-[-10%] translate-y-[20%]">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                                    <i class="w-5 h-5" data-lucide="trending-up"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-bold">+140%</div>
+                                    <div class="text-xs text-on-surface-variant">Direct Orders</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Before/After Section -->
+    <section class="py-32 px-margin-mobile md:px-margin-desktop relative z-10" id="services">
+        <div class="max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 fade-in">
+                <h2
+                    class="font-headline-md text-headline-md md:text-[56px] text-white max-w-2xl leading-tight tracking-tighter">
+                    The shift from <span class="italic text-on-surface-variant font-light">aggregator</span> to <span
+                        class="text-primary">owner</span>.
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-16">
+                <!-- Without Website -->
+                <div class="glass-card p-10 md:p-14 fade-in stagger-1 relative overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-error/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-error/50 to-transparent">
+                    </div>
+                    <h3
+                        class="font-headline-sm text-[32px] text-error mb-10 flex items-center gap-4 font-bold tracking-tight">
+                        <span class="w-12 h-12 rounded-full bg-error/10 flex items-center justify-center"><i
+                                class="w-6 h-6" data-lucide="x"></i></span>
+                        Without a Website
+                    </h3>
+                    <ul class="space-y-8 font-body-md text-body-lg text-on-surface-variant">
+                        <li class="flex items-start gap-5">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container-high border border-white/5 flex items-center justify-center shrink-0 mt-1">
+                                <i class="w-4 h-4 text-error/70" data-lucide="percent"></i>
+                            </div>
+                            <span>High commission fees eating into your margins on aggregators.</span>
+                        </li>
+                        <li class="flex items-start gap-5">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container-high border border-white/5 flex items-center justify-center shrink-0 mt-1">
+                                <i class="w-4 h-4 text-error/70" data-lucide="eye-off"></i>
+                            </div>
+                            <span>Lost in a sea of competitors with zero brand differentiation.</span>
+                        </li>
+                        <li class="flex items-start gap-5">
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-container-high border border-white/5 flex items-center justify-center shrink-0 mt-1">
+                                <i class="w-4 h-4 text-error/70" data-lucide="users"></i>
+                            </div>
+                            <span>No direct customer relationships or database for remarketing.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- With Website -->
+                <div class="glass-card p-10 md:p-14 fade-in stagger-2 relative overflow-hidden group border-primary/20">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-transparent">
+                    </div>
+                    <h3
+                        class="font-headline-sm text-[32px] text-primary mb-10 flex items-center gap-4 font-bold tracking-tight">
+                        <span
+                            class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shadow-[0_0_20px_rgba(245,158,11,0.2)]"><i
+                                class="w-6 h-6" data-lucide="check"></i></span>
+                        With Your Website
+                    </h3>
+                    <ul class="space-y-8 font-body-md text-body-lg text-white">
+                        <li class="flex items-start gap-5">
+                            <div
+                                class="w-8 h-8 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0 mt-1">
+                                <i class="w-4 h-4 text-primary" data-lucide="coins"></i>
+                            </div>
+                            <span>Zero commission on direct orders. Keep 100% of your revenue.</span>
+                        </li>
+                        <li class="flex items-start gap-5">
+                            <div
+                                class="w-8 h-8 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0 mt-1">
+                                <i class="w-4 h-4 text-primary" data-lucide="sparkles"></i>
+                            </div>
+                            <span>Stand out with a premium, bespoke brand identity online.</span>
+                        </li>
+                        <li class="flex items-start gap-5">
+                            <div
+                                class="w-8 h-8 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0 mt-1">
+                                <i class="w-4 h-4 text-primary" data-lucide="database"></i>
+                            </div>
+                            <span>Build and own a loyal customer database for direct marketing.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Demo Showcase Section -->
+    <section class="py-32 px-margin-mobile md:px-margin-desktop relative" id="work">
+        <div class="max-w-container-max mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-headline-md text-headline-md md:text-[48px] text-white mb-6 tracking-tight">Experience
+                    the Quality</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A glimpse into the
+                    high-performance digital storefronts we build.</p>
+            </div>
+            <div class="mockup-browser fade-in stagger-1 max-w-5xl mx-auto">
+                <div class="mockup-header">
+                    <div class="mockup-dots">
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                    </div>
+                    <div
+                        class="mx-auto text-xs text-white/40 font-mono bg-black/50 px-4 py-1 rounded-full border border-white/10">
+                        machindo-s.vercel.app</div>
+                </div>
+                <a href="https://machindo-s.vercel.app" target="_blank" rel="noopener noreferrer"
+                    class="relative block aspect-video bg-surface-container-lowest overflow-hidden group cursor-pointer">
+                    <!-- Demo image -->
+                    <img src="image.png" alt="Machindo's Kitchen & Bar"
+                        class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    <div class="absolute bottom-10 left-10 p-8 glass-card border-l-4 border-l-primary max-w-md">
+                        <h3 class="font-headline-sm text-2xl text-white mb-2">Machindo's Kitchen &amp; Bar</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Fine Dining Restaurant &amp; Bar</p>
+                        <div class="flex gap-4">
+                            <span class="text-xs bg-white/10 px-3 py-1 rounded-full text-white">Menu Integration</span>
+                            <span class="text-xs bg-white/10 px-3 py-1 rounded-full text-white">Reservations</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="py-32 px-margin-mobile md:px-margin-desktop relative">
+        <div class="max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 fade-in">
+                <h2
+                    class="font-headline-md text-headline-md md:text-[48px] text-white max-w-xl leading-tight tracking-tight">
+                    Everything required for a <span class="text-primary">stellar</span> digital presence.</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+                <div class="glass-card p-10 fade-in stagger-1 hover:bg-white/[0.02] transition-colors">
+                    <div
+                        class="w-14 h-14 mb-8 rounded-2xl bg-gradient-to-br from-surface-container-high to-surface-container-low border border-white/10 flex items-center justify-center shadow-lg">
+                        <i class="w-6 h-6 text-primary" data-lucide="layout"></i>
+                    </div>
+                    <h4 class="font-headline-sm text-2xl text-white mb-4 font-bold">Homepage</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">A stunning first
+                        impression designed to convert visitors into diners.</p>
+                </div>
+                <div class="glass-card p-10 fade-in stagger-2 hover:bg-white/[0.02] transition-colors">
+                    <div
+                        class="w-14 h-14 mb-8 rounded-2xl bg-gradient-to-br from-surface-container-high to-surface-container-low border border-white/10 flex items-center justify-center shadow-lg">
+                        <i class="w-6 h-6 text-primary" data-lucide="book-open"></i>
+                    </div>
+                    <h4 class="font-headline-sm text-2xl text-white mb-4 font-bold">Digital Menu</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Beautiful,
+                        easy-to-read, and fast-loading menus optimized for mobile.</p>
+                </div>
+                <div class="glass-card p-10 fade-in stagger-3 hover:bg-white/[0.02] transition-colors">
+                    <div
+                        class="w-14 h-14 mb-8 rounded-2xl bg-gradient-to-br from-surface-container-high to-surface-container-low border border-white/10 flex items-center justify-center shadow-lg">
+                        <i class="w-6 h-6 text-primary" data-lucide="map-pin"></i>
+                    </div>
+                    <h4 class="font-headline-sm text-2xl text-white mb-4 font-bold">Location &amp; Contact</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Seamless integration
+                        with maps and clear booking details.</p>
+                </div>
+                <div class="glass-card p-10 fade-in stagger-1 hover:bg-white/[0.02] transition-colors">
+                    <div
+                        class="w-14 h-14 mb-8 rounded-2xl bg-gradient-to-br from-surface-container-high to-surface-container-low border border-white/10 flex items-center justify-center shadow-lg">
+                        <i class="w-6 h-6 text-[#25D366]" data-lucide="message-circle"></i>
+                    </div>
+                    <h4 class="font-headline-sm text-2xl text-white mb-4 font-bold">WhatsApp Direct</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Frictionless direct
+                        ordering integration straight to your business WhatsApp.</p>
+                </div>
+                <div class="glass-card p-10 fade-in stagger-2 hover:bg-white/[0.02] transition-colors">
+                    <div
+                        class="w-14 h-14 mb-8 rounded-2xl bg-gradient-to-br from-surface-container-high to-surface-container-low border border-white/10 flex items-center justify-center shadow-lg">
+                        <i class="w-6 h-6 text-primary" data-lucide="smartphone"></i>
+                    </div>
+                    <h4 class="font-headline-sm text-2xl text-white mb-4 font-bold">Responsive Design</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Flawless execution
+                        across desktop, tablet, and mobile devices.</p>
+                </div>
+                <div class="glass-card p-10 fade-in stagger-3 hover:bg-white/[0.02] transition-colors">
+                    <div
+                        class="w-14 h-14 mb-8 rounded-2xl bg-gradient-to-br from-surface-container-high to-surface-container-low border border-white/10 flex items-center justify-center shadow-lg">
+                        <i class="w-6 h-6 text-primary" data-lucide="server"></i>
+                    </div>
+                    <h4 class="font-headline-sm text-2xl text-white mb-4 font-bold">Setup &amp; Hosting</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">We handle domains,
+                        hosting, and all the technical heavy lifting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Website Section -->
+    <section class="py-32 px-margin-mobile md:px-margin-desktop relative" id="why-website">
+        <div class="max-w-container-max mx-auto">
+            <div class="text-center mb-20 fade-in">
+                <h2
+                    class="font-headline-md text-headline-md md:text-[56px] text-white mb-6 tracking-tight leading-tight">
+                    Why Machindo's Needs Its <span class="text-primary">Own Website</span>
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto italic">
+                    "Zomato and Swiggy have done something incredible..."
+                </p>
+            </div>
+            <!-- The Problem & Strategic Gains -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-24">
+                <div class="glass-card p-10 fade-in stagger-1">
+                    <h3 class="font-headline-sm text-3xl text-white mb-6 font-bold flex items-center gap-4">
+                        <i class="w-8 h-8 text-error" data-lucide="alert-triangle"></i>
+                        You're Building Their Business, Not Yours
+                    </h3>
+                    <p class="font-body-md text-body-lg text-on-surface-variant leading-relaxed">
+                        Relying solely on platforms means you are vulnerable to commission hikes and algorithm changes.
+                        Every customer acquired through an aggregator is their customer, not yours. You are building
+                        their ecosystem while paying for the privilege.
+                    </p>
+                </div>
+                <div class="glass-card p-10 fade-in stagger-2 border-primary/20 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
+                    <h3 class="font-headline-sm text-3xl text-primary mb-8 font-bold relative z-10">What You Actually
+                        Gain</h3>
+                    <ul class="space-y-4 font-body-md text-body-md text-white relative z-10">
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0"><i
+                                    class="w-4 h-4 text-primary" data-lucide="check"></i></div>
+                            Commission savings
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0"><i
+                                    class="w-4 h-4 text-primary" data-lucide="check"></i></div>
+                            Brand home
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0"><i
+                                    class="w-4 h-4 text-primary" data-lucide="check"></i></div>
+                            Customer ownership
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0"><i
+                                    class="w-4 h-4 text-primary" data-lucide="check"></i></div>
+                            Social media destination
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0"><i
+                                    class="w-4 h-4 text-primary" data-lucide="check"></i></div>
+                            Google ranking
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- The Solution Grid -->
+            <div class="mb-24 fade-in stagger-1">
+                <h3 class="font-headline-sm text-[40px] text-center text-white mb-12 font-bold tracking-tight">
+                    Everything Zomato Does — <span class="text-primary italic font-medium">You Can Do Too</span>
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div class="glass-card p-6 text-center hover:bg-white/[0.02] transition-colors">
+                        <i class="w-8 h-8 text-primary mx-auto mb-4" data-lucide="search"></i>
+                        <h4 class="font-bold text-white mb-2">Discovery</h4>
+                        <p class="text-sm text-on-surface-variant">Google Search</p>
+                    </div>
+                    <div class="glass-card p-6 text-center hover:bg-white/[0.02] transition-colors">
+                        <i class="w-8 h-8 text-primary mx-auto mb-4" data-lucide="menu"></i>
+                        <h4 class="font-bold text-white mb-2">Menu</h4>
+                        <p class="text-sm text-on-surface-variant">Management</p>
+                    </div>
+                    <div class="glass-card p-6 text-center hover:bg-white/[0.02] transition-colors">
+                        <i class="w-8 h-8 text-[#25D366] mx-auto mb-4" data-lucide="message-circle"></i>
+                        <h4 class="font-bold text-white mb-2">Ordering</h4>
+                        <p class="text-sm text-on-surface-variant">WhatsApp Direct</p>
+                    </div>
+                    <div class="glass-card p-6 text-center hover:bg-white/[0.02] transition-colors">
+                        <i class="w-8 h-8 text-primary mx-auto mb-4" data-lucide="truck"></i>
+                        <h4 class="font-bold text-white mb-2">Delivery</h4>
+                        <p class="text-sm text-on-surface-variant">Dunzo/Porter</p>
+                    </div>
+                    <div class="glass-card p-6 text-center hover:bg-white/[0.02] transition-colors">
+                        <i class="w-8 h-8 text-primary mx-auto mb-4" data-lucide="credit-card"></i>
+                        <h4 class="font-bold text-white mb-2">Payment</h4>
+                        <p class="text-sm text-on-surface-variant">UPI</p>
+                    </div>
+                </div>
+            </div>
+            <!-- The ROI Math -->
+            <div
+                class="glass-card border-l-4 border-l-primary p-12 max-w-4xl mx-auto fade-in stagger-2 relative overflow-hidden bg-gradient-to-r from-surface-container-high/80 to-transparent">
+                <h3 class="font-headline-sm text-[36px] text-white mb-8 font-bold">The Numbers Are Simple</h3>
+                <div
+                    class="flex flex-col md:flex-row gap-8 justify-between items-center bg-black/40 p-8 rounded-xl border border-white/5">
+                    <div class="text-center md:text-left">
+                        <p class="text-on-surface-variant text-lg mb-2">100 orders @ ₹500 avg</p>
+                        <p class="font-display-lg text-4xl text-error font-bold tracking-tighter">₹12,500/mo <span
+                                class="text-xl font-normal text-on-surface-variant">lost</span></p>
+                    </div>
+                    <div class="hidden md:block w-px h-16 bg-white/10"></div>
+                    <div class="text-center md:text-left">
+                        <p class="text-on-surface-variant text-lg mb-2">Saving just 30 orders/mo</p>
+                        <p class="font-display-lg text-4xl text-[#27c93f] font-bold tracking-tighter">₹3,750 <span
+                                class="text-xl font-normal text-on-surface-variant">saved</span></p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center bg-primary/10 py-4 rounded-lg border border-primary/20">
+                    <p class="font-bold text-primary text-xl">Website pays for itself in 3 months.</p>
+                </div>
+            </div>
+            <div class="text-center mt-24 fade-in stagger-3">
+                <p class="font-headline-md text-3xl text-white max-w-4xl mx-auto leading-relaxed">
+                    Zomato is a great place to be discovered. <br />
+                    <span class="text-primary italic">Your website is where you actually build something of your
+                        own.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="py-32 px-margin-mobile md:px-margin-desktop relative" id="pricing">
+        <div class="max-w-container-max mx-auto flex flex-col items-center">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-headline-md text-headline-md md:text-[56px] text-white mb-6 tracking-tight">One clear
+                    investment.</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">No hidden fees. No recurring commissions.
+                </p>
+            </div>
+            <div
+                class="glass-card shimmer-card p-12 md:p-16 max-w-xl w-full relative overflow-hidden fade-in stagger-1 border-primary/30">
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent">
+                </div>
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-[120%] bg-primary/10 blur-[100px] -z-10 rounded-full">
+                </div>
+                <div class="text-center mb-12">
+                    <div class="font-label-caps text-label-caps text-primary tracking-[0.2em] uppercase mb-6 font-bold">
+                        Complete Digital Package</div>
+                    <div class="font-display-lg text-[80px] text-white mb-4 leading-none tracking-tighter">₹12,000</div>
+                    <div class="font-body-md text-body-md text-on-surface-variant">One-time payment for complete
+                        ownership.</div>
+                </div>
+                <div class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-10"></div>
+                <ul class="space-y-6 mb-12 font-body-md text-lg text-white mx-auto max-w-sm">
+                    <li class="flex items-center gap-5"><i class="w-5 h-5 text-primary shrink-0"
+                            data-lucide="check"></i> Custom Premium Design</li>
+                    <li class="flex items-center gap-5"><i class="w-5 h-5 text-primary shrink-0"
+                            data-lucide="check"></i> 4 Core Pages (Home, Menu, About, Contact)</li>
+                    <li class="flex items-center gap-5"><i class="w-5 h-5 text-primary shrink-0"
+                            data-lucide="check"></i> WhatsApp Direct Order Integration</li>
+                    <li class="flex items-center gap-5"><i class="w-5 h-5 text-primary shrink-0"
+                            data-lucide="check"></i> Basic SEO &amp; Analytics Setup</li>
+                </ul>
+                <a class="font-button text-button btn-primary w-full block text-center text-lg py-5"
+                    href="https://wa.me/9179821401789">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="border-t border-white/5 pt-32 pb-12 px-margin-mobile md:px-margin-desktop relative mt-20"
+        id="contact">
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent">
+        </div>
+        <div class="max-w-container-max mx-auto">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-16 mb-32 fade-in">
+                <h2
+                    class="font-headline-md text-headline-md md:text-[64px] text-white leading-tight tracking-tighter max-w-2xl text-center lg:text-left">
+                    Ready to own your <br /><span class="italic font-light text-on-surface-variant">corner of the
+                        internet?</span>
+                </h2>
+                <div class="flex flex-col sm:flex-row gap-6 w-full lg:w-auto">
+                    <a class="btn-primary font-button flex items-center justify-center gap-3 text-lg py-5 px-8"
+                        href="#">
+                        <i class="w-5 h-5" data-lucide="message-circle"></i> WhatsApp Us
+                    </a>
+                    <a class="btn-secondary font-button flex items-center justify-center gap-3 text-lg py-5 px-8"
+                        href="#">
+                        <i class="w-5 h-5" data-lucide="mail"></i> Email Us
+                    </a>
+                </div>
+            </div>
+            <div
+                class="w-full flex flex-col md:flex-row justify-between items-center gap-8 pt-10 border-t border-white/5">
+                <div
+                    class="font-headline-sm text-headline-sm font-bold tracking-tighter text-white flex items-center gap-2">
+                    <span
+                        class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-black text-[10px]">M</span>
+                    MADHAV Studio
+                </div>
+                <div class="font-body-md text-sm text-on-secondary-container">© 2024 MADHAV Studio. All rights reserved.
+                </div>
+                <div class="flex gap-8">
+                    <a class="font-body-md text-sm text-on-secondary-container hover:text-white transition-colors uppercase tracking-wider"
+                        href="#">Privacy Policy</a>
+                    <a class="font-body-md text-sm text-on-secondary-container hover:text-white transition-colors uppercase tracking-wider"
+                        href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+
+</html>
